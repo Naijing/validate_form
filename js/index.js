@@ -47,7 +47,9 @@
 			//$(element).parent().find('span').html('ok');
 
 			//这里要给span的元素加内容，html('&nbsp') 加了空格，不加的话，给他加背景图片是没效果的
-			$(element).parent().find('span').html('&nbsp').addClass('succ');
+			
+			//注意如果html()，这样写是表示取值			
+		        $(element).parent().find('span').html('&nbsp').addClass('succ');
 		},
 
 		errorLabelContainer:'ol.reg_error',
